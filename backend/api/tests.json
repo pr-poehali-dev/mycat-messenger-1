@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Health check",
+    "method": "GET",
+    "path": "/auth/me",
+    "headers": {},
+    "expectedStatus": 401
+  }
+]

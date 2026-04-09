@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS t_p80382263_mycat_messenger_1.chats (id SERIAL PRIMARY KEY, type VARCHAR(20) NOT NULL DEFAULT 'private', name VARCHAR(100), description TEXT DEFAULT '', avatar_letter VARCHAR(5) DEFAULT '', avatar_color VARCHAR(10) DEFAULT '#2e6fdb', created_by INTEGER REFERENCES t_p80382263_mycat_messenger_1.users(id), created_at TIMESTAMPTZ DEFAULT NOW())

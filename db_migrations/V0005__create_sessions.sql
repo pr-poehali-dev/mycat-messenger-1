@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS t_p80382263_mycat_messenger_1.sessions (id SERIAL PRIMARY KEY, user_id INTEGER REFERENCES t_p80382263_mycat_messenger_1.users(id), token VARCHAR(255) UNIQUE NOT NULL, created_at TIMESTAMPTZ DEFAULT NOW(), expires_at TIMESTAMPTZ DEFAULT NOW() + INTERVAL '30 days')

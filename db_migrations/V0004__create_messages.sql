@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS t_p80382263_mycat_messenger_1.messages (id SERIAL PRIMARY KEY, chat_id INTEGER REFERENCES t_p80382263_mycat_messenger_1.chats(id), sender_id INTEGER REFERENCES t_p80382263_mycat_messenger_1.users(id), text TEXT NOT NULL, created_at TIMESTAMPTZ DEFAULT NOW(), updated_at TIMESTAMPTZ DEFAULT NOW(), is_removed BOOLEAN DEFAULT false)

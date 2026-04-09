@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS t_p80382263_mycat_messenger_1.chat_members (id SERIAL PRIMARY KEY, chat_id INTEGER REFERENCES t_p80382263_mycat_messenger_1.chats(id), user_id INTEGER REFERENCES t_p80382263_mycat_messenger_1.users(id), role VARCHAR(20) DEFAULT 'member', joined_at TIMESTAMPTZ DEFAULT NOW(), last_read_at TIMESTAMPTZ DEFAULT NOW(), UNIQUE(chat_id, user_id))

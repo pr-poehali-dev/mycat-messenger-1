@@ -157,11 +157,12 @@ export default function Index() {
       >
         {/* Logo */}
         <div className="mb-3 flex flex-col items-center">
-          <div
-            className="w-10 h-10 rounded-2xl flex items-center justify-center text-lg font-bold"
-            style={{ background: "var(--tg-accent)", color: "#fff" }}
-          >
-            🐱
+          <div className="w-10 h-10 rounded-2xl overflow-hidden">
+            <img
+              src="https://cdn.poehali.dev/files/eff26452-fbe5-4617-a298-ccc4856936c4.png"
+              alt="MyCat"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
@@ -484,11 +485,12 @@ export default function Index() {
           </>
         ) : (
           <div className="flex-1 flex flex-col items-center justify-center gap-4" style={{ color: "var(--tg-text-secondary)" }}>
-            <div
-              className="w-20 h-20 rounded-3xl flex items-center justify-center text-4xl"
-              style={{ background: "var(--tg-panel)" }}
-            >
-              🐱
+            <div className="w-20 h-20 rounded-3xl overflow-hidden">
+              <img
+                src="https://cdn.poehali.dev/files/eff26452-fbe5-4617-a298-ccc4856936c4.png"
+                alt="MyCat"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="text-center">
               <h2 className="text-xl font-semibold mb-1" style={{ color: "var(--tg-text)" }}>MyCat</h2>
